@@ -1,0 +1,5 @@
+name: CC Project Trial
+
+on:
+  push:
+    branches: [main]
