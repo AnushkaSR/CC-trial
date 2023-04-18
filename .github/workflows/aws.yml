@@ -1,0 +1,14 @@
+# streamlit_app.yaml
+title: My Streamlit App
+description: A simple Streamlit app
+source: Home.py
+dependencies:
+  - python=3.8.5
+  - pip:
+    - streamlit==0.87.0
+deploy:
+  aws:
+    region: us-west-2
+    instance_type: t2.micro
+    key_name: my-keypair
+    ssh_options: "-i ~/.ssh/my-keypair.pem"
